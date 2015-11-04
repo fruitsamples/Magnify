@@ -12,31 +12,6 @@
 		4F94EF6107B3093D00AE9F13 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A3A594FF2F9CF711CA0DE8 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		022D12FE0045A0867F000001 /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		022D12FF0045A0867F000001 /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXFileReference section */
 		0329BC0A00585ADE11CA0DE8 /* Magnify.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Magnify.nib; sourceTree = "<group>"; };
 		36A3A58CFF2F9CF711CA0DE8 /* Magnify.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Magnify.cp; sourceTree = "<group>"; };
@@ -116,7 +91,7 @@
 /* Begin PBXNativeTarget section */
 		4F94EF5A07B3093D00AE9F13 /* Magnify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2B057008A0279C0055E173 /* Build configuration list for PBXNativeTarget "Magnify" */;
+			buildConfigurationList = BE651B5C0C3472AF00EC1FC8 /* Build configuration list for PBXNativeTarget "Magnify" */;
 			buildPhases = (
 				4F94EF5B07B3093D00AE9F13 /* Headers */,
 				4F94EF5C07B3093D00AE9F13 /* Resources */,
@@ -126,22 +101,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
-				INFOPLIST_FILE = "Info-Magnify.plist";
-				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Magnify;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
 			dependencies = (
 			);
 			name = Magnify;
@@ -155,13 +114,7 @@
 /* Begin PBXProject section */
 		36A3A589FF2F9CF711CA0DE8 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 4F2B057408A0279C0055E173 /* Build configuration list for PBXProject "Magnify" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				022D12FE0045A0867F000001 /* Development */,
-				022D12FF0045A0867F000001 /* Deployment */,
-			);
+			buildConfigurationList = BE651B600C3472AF00EC1FC8 /* Build configuration list for PBXProject "Magnify" */;
 			hasScannedForEncodings = 1;
 			mainGroup = 36A3A58AFF2F9CF711CA0DE8 /* Magnify */;
 			productRefGroup = 36A3A595FF2F9CF711CA0DE8 /* Products */;
@@ -205,81 +158,122 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4F2B057108A0279C0055E173 /* Debug */ = {
+		BE651B5D0C3472AF00EC1FC8 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				INFOPLIST_FILE = "Info-Magnify.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Magnify;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Debug;
+			name = Development;
 		};
-		4F2B057208A0279C0055E173 /* Release */ = {
+		BE651B5E0C3472AF00EC1FC8 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
 				INFOPLIST_FILE = "Info-Magnify.plist";
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Magnify;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		BE651B5F0C3472AF00EC1FC8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
+				INFOPLIST_FILE = "Info-Magnify.plist";
+				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Magnify;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
 				WRAPPER_EXTENSION = app;
 			};
-			name = Release;
+			name = Default;
 		};
-		4F2B057508A0279C0055E173 /* Debug */ = {
+		BE651B610C3472AF00EC1FC8 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
-			name = Debug;
+			name = Development;
 		};
-		4F2B057608A0279C0055E173 /* Release */ = {
+		BE651B620C3472AF00EC1FC8 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
-			name = Release;
+			name = Deployment;
+		};
+		BE651B630C3472AF00EC1FC8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F2B057008A0279C0055E173 /* Build configuration list for PBXNativeTarget "Magnify" */ = {
+		BE651B5C0C3472AF00EC1FC8 /* Build configuration list for PBXNativeTarget "Magnify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2B057108A0279C0055E173 /* Debug */,
-				4F2B057208A0279C0055E173 /* Release */,
+				BE651B5D0C3472AF00EC1FC8 /* Development */,
+				BE651B5E0C3472AF00EC1FC8 /* Deployment */,
+				BE651B5F0C3472AF00EC1FC8 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Default;
 		};
-		4F2B057408A0279C0055E173 /* Build configuration list for PBXProject "Magnify" */ = {
+		BE651B600C3472AF00EC1FC8 /* Build configuration list for PBXProject "Magnify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F2B057508A0279C0055E173 /* Debug */,
-				4F2B057608A0279C0055E173 /* Release */,
+				BE651B610C3472AF00EC1FC8 /* Development */,
+				BE651B620C3472AF00EC1FC8 /* Deployment */,
+				BE651B630C3472AF00EC1FC8 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Default;
 		};
 /* End XCConfigurationList section */
 	};

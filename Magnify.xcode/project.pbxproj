@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		022D12FE0045A0867F000001 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		022D12FF0045A0867F000001 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//020
+//021
+//022
+//023
+//024
+//030
+//031
+//032
+//033
+//034
+		0329BC0A00585ADE11CA0DE8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			path = Magnify.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//030
+//031
+//032
+//033
+//034
+//360
+//361
+//362
+//363
+//364
+		36A3A589FF2F9CF711CA0DE8 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				022D12FE0045A0867F000001,
+				022D12FF0045A0867F000001,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 36A3A58AFF2F9CF711CA0DE8;
+			productRefGroup = 36A3A595FF2F9CF711CA0DE8;
+			projectDirPath = "";
+			targets = (
+				4F94EF5A07B3093D00AE9F13,
+			);
+		};
+		36A3A58AFF2F9CF711CA0DE8 = {
+			children = (
+				36A3A58BFF2F9CF711CA0DE8,
+				36A3A58DFF2F9CF711CA0DE8,
+				36A3A593FF2F9CF711CA0DE8,
+				36A3A595FF2F9CF711CA0DE8,
+				4F94EF6307B3093D00AE9F13,
+			);
+			isa = PBXGroup;
+			name = Magnify;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		36A3A58BFF2F9CF711CA0DE8 = {
+			children = (
+				36A3A58CFF2F9CF711CA0DE8,
+			);
+			isa = PBXGroup;
+			name = Sources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		36A3A58CFF2F9CF711CA0DE8 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			path = Magnify.cp;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		36A3A58DFF2F9CF711CA0DE8 = {
+			children = (
+				0329BC0A00585ADE11CA0DE8,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		36A3A593FF2F9CF711CA0DE8 = {
+			children = (
+				36A3A594FF2F9CF711CA0DE8,
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		36A3A594FF2F9CF711CA0DE8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Carbon.framework;
+			path = /System/Library/Frameworks/Carbon.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		36A3A595FF2F9CF711CA0DE8 = {
+			children = (
+				4F94EF6407B3093D00AE9F13,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//360
+//361
+//362
+//363
+//364
+//4F0
+//4F1
+//4F2
+//4F3
+//4F4
+		4F94EF5A07B3093D00AE9F13 = {
+			buildPhases = (
+				4F94EF5B07B3093D00AE9F13,
+				4F94EF5C07B3093D00AE9F13,
+				4F94EF5E07B3093D00AE9F13,
+				4F94EF6007B3093D00AE9F13,
+				4F94EF6207B3093D00AE9F13,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_CARBON=1";
+				INFOPLIST_FILE = "Info-Magnify.plist";
+				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Magnify;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = Magnify;
+			productInstallPath = "$(LOCAL_DEVELOPER_DIR)/Demos";
+			productName = Magnify;
+			productReference = 4F94EF6407B3093D00AE9F13;
+			productType = "com.apple.product-type.application";
+		};
+		4F94EF5B07B3093D00AE9F13 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94EF5C07B3093D00AE9F13 = {
+			buildActionMask = 2147483647;
+			files = (
+				4F94EF5D07B3093D00AE9F13,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94EF5D07B3093D00AE9F13 = {
+			fileRef = 0329BC0A00585ADE11CA0DE8;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4F94EF5E07B3093D00AE9F13 = {
+			buildActionMask = 2147483647;
+			files = (
+				4F94EF5F07B3093D00AE9F13,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94EF5F07B3093D00AE9F13 = {
+			fileRef = 36A3A58CFF2F9CF711CA0DE8;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		4F94EF6007B3093D00AE9F13 = {
+			buildActionMask = 2147483647;
+			files = (
+				4F94EF6107B3093D00AE9F13,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94EF6107B3093D00AE9F13 = {
+			fileRef = 36A3A594FF2F9CF711CA0DE8;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		4F94EF6207B3093D00AE9F13 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94EF6307B3093D00AE9F13 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = "Info-Magnify.plist";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		4F94EF6407B3093D00AE9F13 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = Magnify.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+	};
+	rootObject = 36A3A589FF2F9CF711CA0DE8;
+}
